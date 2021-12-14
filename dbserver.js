@@ -16,9 +16,9 @@ const db = require('./models');
 db.sequelize.sync();
 
 // default route
-//app.get('/', function(req, res, next) {
-//	return res.send({ message: 'Welcome to AddressBook Backend' });
-//});
+app.get('/', function(req, res, next) {
+	return res.send({ message: 'Welcome to AddressBook Backend' });
+});
 const PORT = process.env.PORT || 9080;
 app.use('/api/contacts', routes);
 app.listen(PORT, () => {
