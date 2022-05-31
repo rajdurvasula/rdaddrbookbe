@@ -1,0 +1,6 @@
+create database rdaddrbookdev;
+create user 'addrbook'@'localhost' identified by 'rdaddrbook';
+create user 'addrbook'@'%' identified by 'rdaddrbook';
+grant all privileges on rdaddrbookdev.* to 'addrbook'@'%';     
+grant all privileges on rdaddrbookdev.* to 'addrbook'@'localhost';
+quit;
